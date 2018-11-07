@@ -1,6 +1,6 @@
 <template>
   <div class="index">
-      {{ msg }}
+    <div>asasdd</div>
   </div>
 </template>
 
@@ -8,9 +8,6 @@
 export default {
   name: 'Index',
   data () {
-    return {
-      msg: 'Hello Vju'
-    }
   }
 }
 </script>
