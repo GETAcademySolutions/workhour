@@ -1,38 +1,45 @@
 <template>
   <div class="index">
-    <div>asasdd</div>
+    <h1>Work Hour</h1>
+    <div id="signupLoginDiv" class="row">
+    <div id="signupDiv" class="col-5">
+      <p>Sign up</p>
+      <div class="initButton" @click="signup">Sign up</div>
+    </div>
+    <div class="col-2"></div>
+    <div id="loginDiv" class="col-5">
+      <p>Log in</p>
+      <div class="initButton" @click="login">Log in</div>
+    </div>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Index',
-  data () {
+  name: "Index",
+  data() {
+    return {};
+  },
+  methods: {
+    signup() {
+      this.$router.push({ name: "Signup" });
+    },
+    login() {
+      this.$router.push({ name: "Login" });
+    }
   }
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
-  font-weight: normal;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
-table{
-  border-collapse: collapse;
-}
-td, tr, table, tfoot {
-  border: 1px solid gray;
-  padding: 2px;
+#signupDiv,
+#loginDiv {
+  margin-top: 15%;
+  padding: 2%;
+  border: 1px solid black;
+  background-color: rgb(255, 166, 50);
+  color: rgb(0, 0, 0);
 }
 </style>

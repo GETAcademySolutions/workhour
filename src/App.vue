@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <Navbar />
+  <div class="container">
     <router-view/>
+  </div>
   </div>
 </template>
 
@@ -28,5 +30,17 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 20px;
+}
+.initButton {
+  padding: 25px;
+  border: 1px solid black;
+  background-color: rgb(179, 0, 179);
+  color: rgb(255, 255, 255);
+}
+.initButton2 {
+  padding: 15px;
+  border: 1px solid black;
+  background-color: rgb(179, 0, 179);
+  color: rgb(255, 255, 255);
 }
 </style>
