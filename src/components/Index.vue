@@ -39,7 +39,7 @@ export default {
   margin-top: 15%;
   padding: 2%;
   border: 1px solid black;
-  background-color: rgb(255, 166, 50);
+  background-color: #FF8500;
   color: rgb(0, 0, 0);
 }
 </style>

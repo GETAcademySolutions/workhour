@@ -38,14 +38,14 @@
     <div class="containerDiv row"> 
       <div class="containerPart col-3"></div>
       <div class="containerPart col-6 visiblePart">
-      <div class="initButton2" @click="timeTracker" style="width: 37.5%; margin: auto;">Sign up</div>
+      <div class="initButton initButton2" @click="timeTracker" style="width: 37.5%; margin: auto;">Sign up</div>
       </div>
       <div class="containerPart col-3"></div>
     </div>
     <div class="containerDiv row"> 
       <div class="containerPart col-3"></div>
       <div class="containerPart col-6 visiblePart">
-      <div class="initButton2" @click="index" style="width: 37.5%; margin: auto;">Back</div>
+      <div class="initButton initButton2" @click="index" style="width: 37.5%; margin: auto;">Back</div>
       </div>
       <div class="containerPart col-3"></div>
     </div>
@@ -70,6 +70,6 @@ export default {
 </script>
 <style scoped>
 .containerDiv {
-  margin-top: 3.5%;
+  margin-top: 2%;
 }
 </style>

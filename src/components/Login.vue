@@ -56,6 +56,6 @@ export default {
 </script>
 <style scoped>
 .containerDiv {
-  margin-top: 3.5%;
+  margin-top: 2%;
 }
 </style>

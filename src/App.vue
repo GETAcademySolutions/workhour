@@ -34,13 +34,10 @@ export default {
 .initButton {
   padding: 25px;
   border: 1px solid black;
-  background-color: rgb(179, 0, 179);
+  background-color: #0776A0;
   color: rgb(255, 255, 255);
 }
 .initButton2 {
   padding: 15px;
-  border: 1px solid black;
-  background-color: rgb(179, 0, 179);
-  color: rgb(255, 255, 255);
 }
 </style>
