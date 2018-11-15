@@ -63,12 +63,13 @@ export default {
 }
 
 .rightBorder {
-  border-right: 1.5px solid #ff8500;
+  border-right: 1px solid #ff8500;
 }
 
 .noRightBorder {
   border-right: none;
 }
+
 .dropdownButton {
   font-size: 100%;
   margin: 2px;

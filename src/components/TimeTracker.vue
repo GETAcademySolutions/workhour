@@ -73,6 +73,7 @@ export default {
 .containerDiv {
   margin-top: 3.5%;
   font-size: 100%;
+  border: none;
 }
 .noBorder {
   border: none;

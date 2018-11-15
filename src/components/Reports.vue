@@ -24,7 +24,7 @@
     <div class="containerDiv row">
 
 
-      <b-dropdown class="dropdownDiv rightBorder col-1" variant="link" left>
+      <b-dropdown class="dropdownDiv rightBorder" variant="link" left>
         <template slot="button-content">
           <em class="dropdownButton">Team</em>
         </template>
@@ -34,7 +34,7 @@
       </b-dropdown>
 
 
-      <b-dropdown class="dropdownDiv rightBorder col-1" variant="link" left>
+      <b-dropdown class="dropdownDiv rightBorder" variant="link" left>
         <template slot="button-content">
           <em class="dropdownButton">Today</em>
         </template>
@@ -44,7 +44,7 @@
       </b-dropdown>
 
 
-      <b-dropdown class="dropdownDiv rightBorder col-1" variant="link" left>
+      <b-dropdown class="dropdownDiv rightBorder" variant="link" left>
         <template slot="button-content">
           <em class="dropdownButton">Client</em>
         </template>
@@ -54,7 +54,7 @@
       </b-dropdown>
 
 
-      <b-dropdown class="dropdownDiv rightBorder col-1" variant="link" left>
+      <b-dropdown class="dropdownDiv rightBorder" variant="link" left>
         <template slot="button-content">
           <em class="dropdownButton">Project</em>
         </template>
@@ -64,7 +64,7 @@
       </b-dropdown>
 
 
-      <b-dropdown class="dropdownDiv rightBorder col-1" variant="link" left>
+      <b-dropdown class="dropdownDiv rightBorder" variant="link" left>
         <template slot="button-content">
           <em class="dropdownButton">Task</em>
         </template>
@@ -74,7 +74,7 @@
       </b-dropdown>
 
 
-      <b-dropdown class="dropdownDiv rightBorder col-1" variant="link" left>
+      <b-dropdown class="dropdownDiv rightBorder" variant="link" left>
         <template slot="button-content">
           <em class="dropdownButton">Tag</em>
         </template>
@@ -84,7 +84,7 @@
       </b-dropdown>
 
 
-      <b-dropdown class="dropdownDiv rightBorder col-1" variant="link" left>
+      <b-dropdown class="dropdownDiv rightBorder" variant="link" left>
         <template slot="button-content">
           <em class="dropdownButton">Billable</em>
         </template>
