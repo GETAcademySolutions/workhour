@@ -21,15 +21,13 @@ name: "Settings",
 </script>
 <style scoped>
 * {
-  align-content: left;
-  align-items: left;
-  align-self: left;
   text-align: left;
+  margin-top: 1%;
 }
 .aLittlePadding {
   padding: 10px;
 }
 img {
-  border: 5px solid gray;
+  border: 1px solid rgba(166, 166, 166, 1);
 }
 </style>
