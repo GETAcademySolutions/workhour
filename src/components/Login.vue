@@ -17,7 +17,7 @@
     <div class="containerDiv row"> 
       <div class="containerPart col-3"></div>
       <div class="containerPart col-6 visiblePart">
-       <input type="text" placeholder="Password">
+       <input type="password" placeholder="Password">
       </div>
       <div class="containerPart col-3"></div>
     </div>

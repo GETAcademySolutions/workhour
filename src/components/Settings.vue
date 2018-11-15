@@ -1,32 +1,46 @@
 <template>
-  <div>
+  <div>    
+    <div class="spaceGeneratorDiv">
     <img src="../assets/GET HELKS.png" alt="">
-    <div>
-      <input class="aLittlePadding" placeholder="Username" />
-    <div>
     </div>
+    <div class="spaceGeneratorDiv">
+      <input class="aLittlePadding" placeholder="Username" />
+    </div>
+    <div class="spaceGeneratorDiv">
       <input class="aLittlePadding" placeholder="E-mail" />
     </div>
-      <button class="aLittlePadding">Edit password</button>
+    <div class="spaceGeneratorDiv">
+      <button class="aLittlePadding" @click="changePassword">Edit password</button>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-name: "Settings",
+  name: "Settings",
   data() {
     return {};
   },
+  methods: {
+    changePassword() {
+      this.$router.push({ name: "ChangePassword" });
+    }
+  }
 };
 </script>
 <style scoped>
 * {
   text-align: left;
-  margin-top: 1%;
 }
+
+.spaceGeneratorDiv{
+  margin-top: 2%;
+}
+
 .aLittlePadding {
   padding: 10px;
 }
+
 img {
   border: 1px solid rgba(166, 166, 166, 1);
 }

@@ -7,6 +7,7 @@ import Reports from '@/components/Reports';
 import Projects from '@/components/Projects';
 import Signup from '@/components/Signup';
 import Login from '@/components/Login';
+import ChangePassword from '@/components/ChangePassword';
 
 Vue.use(Router);
 
@@ -47,5 +48,10 @@ export default new Router({
       name: 'Login',
       component: Login
     },
+    {
+      path: '/ChangePassword',
+      name: 'ChangePassword',
+      component: ChangePassword
+    }
   ]
 });
