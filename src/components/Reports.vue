@@ -1,7 +1,7 @@
 <template>
   <div class="reports">
     <div class="row" style="margin-bottom: 1%;">
-      <div class="col-10 pageHeader">Summary reports</div>
+      <div class="pageHeader" style="margin-right: auto;">Summary reports</div>
       <div class="col-1 noRightBorder containerDiv miniContainerDiv">
 
 

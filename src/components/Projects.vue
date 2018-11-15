@@ -1,6 +1,6 @@
 <template>
   <div class="projects">
-    <div class="col-10 pageHeader">Projects</div>
+    <div class="pageHeader">Projects</div>
     <div class="containerDiv row">
       
       
