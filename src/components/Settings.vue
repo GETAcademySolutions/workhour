@@ -10,7 +10,7 @@
       <input class="aLittlePadding" placeholder="E-mail" />
     </div>
     <div class="spaceGeneratorDiv">
-      <button class="aLittlePadding" @click="changePassword">Edit password</button>
+      <button class="aLittlePadding initButton" @click="changePassword">Edit password</button>
     </div>
   </div>
 </template>
@@ -41,7 +41,11 @@ export default {
   padding: 10px;
 }
 
+input {
+  border: 1px solid #FF8500;
+}
+
 img {
-  border: 1px solid rgba(166, 166, 166, 1);
+  border: 2px solid #FF8500;
 }
 </style>

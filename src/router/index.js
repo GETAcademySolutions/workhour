@@ -8,6 +8,7 @@ import Projects from '@/components/Projects';
 import Signup from '@/components/Signup';
 import Login from '@/components/Login';
 import ChangePassword from '@/components/ChangePassword';
+import Team from '@/components/Team';
 
 Vue.use(Router);
 
@@ -52,6 +53,11 @@ export default new Router({
       path: '/ChangePassword',
       name: 'ChangePassword',
       component: ChangePassword
+    },
+    {
+      path: '/Team',
+      name: 'Team',
+      component: Team
     }
   ]
 });

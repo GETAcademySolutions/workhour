@@ -86,7 +86,7 @@ export default {
   border-right: none;
 }
 .day {
-  background-color: #0776A0;
+  background-color: #016872;
   color: rgba(255, 255, 255, 0.7);
 }
 </style>

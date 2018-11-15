@@ -10,6 +10,7 @@
         <b-nav-item @click="timeTracker">Time tracker</b-nav-item>
         <b-nav-item @click="reports">Reports</b-nav-item>
         <b-nav-item @click="projects">Projects</b-nav-item>
+        <b-nav-item @click="team">Team</b-nav-item>
       </b-navbar-nav>
 
       <!-- Right aligned nav items -->
@@ -27,7 +28,7 @@
           </template>
           <b-dropdown-item href="#" style="font-weight: bold;">Work space:</b-dropdown-item>
           <b-dropdown-item href="#">- Hjemme</b-dropdown-item>
-          <b-dropdown-divider></b-dropdown-divider>
+          <b-dropdown-divider style="border-color: #FF8500;"></b-dropdown-divider>
           <b-dropdown-item href="#" @click="settings">Settings</b-dropdown-item>
           <b-dropdown-item href="#" @click="index">Log out</b-dropdown-item>
         </b-nav-item-dropdown>
@@ -59,6 +60,9 @@ export default {
     },
     projects() {
       this.$router.push({ name: "Projects" });
+    },
+    team() {
+      this.$router.push({ name: "Team" });
     }
   }
 };
@@ -67,5 +71,8 @@ export default {
 <style scoped>
 .navbar {
   width: 100%;
+}
+b-nav-item {
+  color: #ffffff;
 }
 </style>
