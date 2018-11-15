@@ -1,7 +1,6 @@
 <template>
   <div class="team">
-    <div>Team</div>
-    <div>6</div>
+      <div class="col-10 pageHeader">Team</div>
   </div>
 </template>
 

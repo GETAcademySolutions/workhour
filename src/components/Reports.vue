@@ -1,29 +1,101 @@
 <template>
   <div class="reports">
     <div class="row" style="margin-bottom: 1%;">
-      <div class="col-10"></div>
+      <div class="col-10 pageHeader">Summary reports</div>
       <div class="col-1 noRightBorder containerDiv miniContainerDiv">
-        <b-dropdown class="dropdownDiv" variant="link" right>
+
+
+        <b-dropdown class="dropdownDiv" variant="link" left>
           <template slot="button-content">
             <em class="dropdownButton">Today</em>
           </template>
+          <b-dropdown-item href="#">Something</b-dropdown-item>
+          <b-dropdown-divider style="border-color: #FF8500;"></b-dropdown-divider>
+          <b-dropdown-item href="#">Something else</b-dropdown-item>
         </b-dropdown>
+
+
       </div>
       <div class="col-1 containerDiv miniContainerDiv">
-        <button class="initButton" style="width: 47%;">&lt;</button>
-        <button class="initButton" style="width: 47%;">></button>
+        <button class="initButton3" style="width: 47%;">&lt;</button>
+        <button class="initButton3" style="width: 47%;">></button>
       </div>
     </div>
     <div class="containerDiv row">
-      <div class="col-1 rightBorder">Teams</div>
-      <div class="col-1 rightBorder">Active</div>
-      <div class="col-1 rightBorder">Client</div>
-      <div class="col-1 rightBorder">Project</div>
-      <div class="col-1 rightBorder">Task</div>
-      <div class="col-1 rightBorder">Tag</div>
-      <div class="col-1 rightBorder">Billable</div>
-      <div class="col-4"><input type="text" placeholder="Search by description..."></div>
-      <div class="col-1"><button class="initButton">Filter</button></div>
+
+
+      <b-dropdown class="dropdownDiv rightBorder col-1" variant="link" left>
+        <template slot="button-content">
+          <em class="dropdownButton">Team</em>
+        </template>
+        <b-dropdown-item href="#">Something</b-dropdown-item>
+        <b-dropdown-divider style="border-color: #FF8500;"></b-dropdown-divider>
+        <b-dropdown-item href="#">Something else</b-dropdown-item>
+      </b-dropdown>
+
+
+      <b-dropdown class="dropdownDiv rightBorder col-1" variant="link" left>
+        <template slot="button-content">
+          <em class="dropdownButton">Today</em>
+        </template>
+        <b-dropdown-item href="#">Something</b-dropdown-item>
+        <b-dropdown-divider style="border-color: #FF8500;"></b-dropdown-divider>
+        <b-dropdown-item href="#">Something else</b-dropdown-item>
+      </b-dropdown>
+
+
+      <b-dropdown class="dropdownDiv rightBorder col-1" variant="link" left>
+        <template slot="button-content">
+          <em class="dropdownButton">Client</em>
+        </template>
+        <b-dropdown-item href="#">Something</b-dropdown-item>
+        <b-dropdown-divider style="border-color: #FF8500;"></b-dropdown-divider>
+        <b-dropdown-item href="#">Something else</b-dropdown-item>
+      </b-dropdown>
+
+
+      <b-dropdown class="dropdownDiv rightBorder col-1" variant="link" left>
+        <template slot="button-content">
+          <em class="dropdownButton">Project</em>
+        </template>
+        <b-dropdown-item href="#">Something</b-dropdown-item>
+        <b-dropdown-divider style="border-color: #FF8500;"></b-dropdown-divider>
+        <b-dropdown-item href="#">Something else</b-dropdown-item>
+      </b-dropdown>
+
+
+      <b-dropdown class="dropdownDiv rightBorder col-1" variant="link" left>
+        <template slot="button-content">
+          <em class="dropdownButton">Task</em>
+        </template>
+        <b-dropdown-item href="#">Something</b-dropdown-item>
+        <b-dropdown-divider style="border-color: #FF8500;"></b-dropdown-divider>
+        <b-dropdown-item href="#">Something else</b-dropdown-item>
+      </b-dropdown>
+
+
+      <b-dropdown class="dropdownDiv rightBorder col-1" variant="link" left>
+        <template slot="button-content">
+          <em class="dropdownButton">Tag</em>
+        </template>
+        <b-dropdown-item href="#">Something</b-dropdown-item>
+        <b-dropdown-divider style="border-color: #FF8500;"></b-dropdown-divider>
+        <b-dropdown-item href="#">Something else</b-dropdown-item>
+      </b-dropdown>
+
+
+      <b-dropdown class="dropdownDiv rightBorder col-1" variant="link" left>
+        <template slot="button-content">
+          <em class="dropdownButton">Billable</em>
+        </template>
+        <b-dropdown-item href="#">Something</b-dropdown-item>
+        <b-dropdown-divider style="border-color: #FF8500;"></b-dropdown-divider>
+        <b-dropdown-item href="#">Something else</b-dropdown-item>
+      </b-dropdown>
+
+
+      <div class="col-4"><input class="searchBar" type="text" placeholder="Search by description..."></div>
+      <div class="col-1"><button class="initButton3">Filter</button></div>
     </div>
   </div>
 </template>
@@ -45,34 +117,5 @@ export default {
 </script>
 
 <style scoped>
-.containerDiv {
-  border: 1.5px solid #ff8500;
-  padding: 1% 0;
-}
 
-.miniContainerDiv {
-  padding: 0.3%;
-}
-
-.rightBorder {
-  border-right: 1.5px solid #ff8500;
-}
-
-.noRightBorder {
-  border-right: none;
-}
-
-input {
-  border: none;
-}
-
-.initButton {
-  margin-top: 6%;
-  padding: 1px 5px;
-}
-
-.dropdownButton {
-  margin: 2px;
-  color: #000000;
-}
 </style>
