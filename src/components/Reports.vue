@@ -2,12 +2,12 @@
   <div class="reports">
     <div class="row" style="margin-bottom: 1%;">
       <div class="col-10"></div>
-      <div class="col-1 noRightBorder containerDiv miniContainerDiv">Today
-        <!-- <b-nav-item-dropdown right>
+      <div class="col-1 noRightBorder containerDiv miniContainerDiv">
+        <b-dropdown class="dropdownDiv" variant="link" right>
           <template slot="button-content">
-            <em>Today</em>
+            <em class="dropdownButton">Today</em>
           </template>
-        </b-nav-item-dropdown> -->
+        </b-dropdown>
       </div>
       <div class="col-1 containerDiv miniContainerDiv">
         <button class="initButton" style="width: 47%;">&lt;</button>
@@ -67,6 +67,12 @@ input {
 }
 
 .initButton {
+  margin-top: 6%;
   padding: 1px 5px;
+}
+
+.dropdownButton {
+  margin: 2px;
+  color: #000000;
 }
 </style>
