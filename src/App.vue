@@ -53,6 +53,10 @@ export default {
   background-color: #016872;
 }
 
+.initButtonBlue {
+  background-color: #016872;
+}
+
 .containerDiv {
   border: 1.5px solid #ff8500;
   padding: 1% 0;
