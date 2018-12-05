@@ -24,14 +24,21 @@
     <div class="containerDiv row"> 
       <div class="containerPart col-3"></div>
       <div class="containerPart col-6 visiblePart">
-      <div class="initButton" @click="timeTracker" style="width: 37.5%; margin: auto;">Log in</div>
+      <div class="initButton" @click="timeTracker" style="margin: auto;">Log in</div>
       </div>
       <div class="containerPart col-3"></div>
     </div>
     <div class="containerDiv row"> 
       <div class="containerPart col-3"></div>
       <div class="containerPart col-6 visiblePart">
-      <div class="initButton" @click="index" style="width: 37.5%; margin: auto;">Back</div>
+      <div class="initButton" @click="index" style="margin: auto;">Back</div>
+      </div>
+      <div class="containerPart col-3"></div>
+    </div>
+    <div class="containerDiv row"> 
+      <div class="containerPart col-3"></div>
+      <div class="containerPart col-6 visiblePart">
+      <div><b-link @click="changePassword">Forgot password</b-link></div>
       </div>
       <div class="containerPart col-3"></div>
     </div>
@@ -50,12 +57,19 @@ export default {
     },
     timeTracker() {
       this.$router.push({ name: "TimeTracker" });
+    },
+    changePassword() {
+      this.$router.push({ name: "ChangePassword" });
     }
   }
 }
 </script>
 <style scoped>
 .containerDiv {
-  margin-top: 2%;
+  margin-top: 1%;
+  border: none;
+}
+input {
+  width: 75%;
 }
 </style>

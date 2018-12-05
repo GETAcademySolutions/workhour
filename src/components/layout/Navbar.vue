@@ -5,8 +5,8 @@
       <b-navbar-brand @click="index" href="#"><img src="../../assets/GET HELKS.png" class="" style="width:30%; float: left;" /></b-navbar-brand>
       <b-collapse is-nav id="nav_collapse">
 
-      <b-navbar-nav>
-        <b-nav-item @click="index" id="home">Home</b-nav-item>
+      <b-navbar-nav style="text-align: left;">
+        <b-nav-item @click="index">Home</b-nav-item>
         <b-nav-item @click="timeTracker">Time tracker</b-nav-item>
         <b-nav-item @click="reports">Reports</b-nav-item>
         <b-nav-item @click="projects">Projects</b-nav-item>
@@ -21,7 +21,7 @@
           <b-button size="sm" class="my-2 my-sm-0" type="submit">Search</b-button>
         </b-nav-form> -->
 
-        <b-nav-item-dropdown right>
+        <b-nav-item-dropdown right style="text-align: left;">
           <!-- Using button-content slot -->
           <template slot="button-content">
             <em>Username</em>
