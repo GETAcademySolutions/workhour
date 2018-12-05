@@ -2,7 +2,7 @@
   <div class="reports">
     <div class="row" style="margin-bottom: 1%;">
       <div class="pageHeader" style="margin-right: auto;">Summary reports</div>
-      <div class="col-1 noRightBorder containerDiv miniContainerDiv">
+      <div class="noRightBorder containerDiv miniContainerDiv">
 
 
         <b-dropdown class="dropdownDiv" variant="link" left>
@@ -94,8 +94,8 @@
       </b-dropdown>
 
 
-      <div class="col-4"><input class="searchBar" type="text" placeholder="Search by description..."></div>
-      <div class="col-1"><button class="initButton3">Filter</button></div>
+      <div class="searchDiv"><input class="searchBar" type="text" placeholder="Search by description..."></div>
+      <div class="filterDiv"><button class="initButton3">Filter</button></div>
     </div>
   </div>
 </template>

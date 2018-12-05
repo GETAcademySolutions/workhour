@@ -19,35 +19,39 @@
 </template>
 
 <script>
-  export default {
-    name: "ChangePassword",
-    data() {
-      return {};
-    },
-    methods: {
-      index() {
+export default {
+  name: "ChangePassword",
+  data() {
+    return {};
+  },
+  methods: {
+    index() {
+      var message = confirm(
+        "Are you sure you would like to reset your password?"
+      );
+      if (message == true) {
         this.$router.push({
           name: "Index"
         });
       }
     }
-  };
-
+  }
+};
 </script>
 
 <style scoped>
-  h1 {
-    margin-top: 5%;
-  }
+h1 {
+  margin-top: 5%;
+}
 
 input {
   width: 75%;
   margin-top: 2.5%;
 }
-  button {
-    margin-top: 3.3%;
-    padding: 10px;
-    font-size: 24px;
-  }
 
+button {
+  margin-top: 3.3%;
+  padding: 10px;
+  font-size: 24px;
+}
 </style>

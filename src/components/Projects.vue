@@ -21,7 +21,7 @@
       <div class="col-1 containerDiv miniContainerDiv" style="visibility: hidden;">
         <button class="initButton3" style="width: 47%;">&lt;</button>
         <button class="initButton3" style="width: 47%;">></button>
-      </div>      
+      </div>
       <!-- /\ Hidden -->
 
     </div>
@@ -68,9 +68,8 @@
       </b-dropdown>
 
 
-      <div class="col-3"></div>
-      <div class="col-4"><input class="searchBar" type="text" placeholder="Search by description..."></div>
-      <div class="col-1"><button class="initButton3">Filter</button></div>
+        <div class="searchDiv"><input class="searchBar" type="text" placeholder="Search by description..."></div>
+        <div class="filterDiv"><button class="initButton3">Filter</button></div>
     </div>
   </div>
 </template>

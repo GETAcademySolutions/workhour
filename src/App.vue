@@ -82,11 +82,17 @@ export default {
 }
 
 .searchBar {
-  width: 75%;
+  width: 100%;
   padding-top: 6px;
   text-align: center;
   border: none;
   outline: none;
 }
 
+.searchDiv {
+  margin-left: auto;
+}
+.filterDiv {
+  margin-right: 1%;
+}
 </style>

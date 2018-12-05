@@ -2,15 +2,17 @@
   <div class="index">
     <h1>Work Hour</h1>
     <div id="signupLoginDiv" class="row">
-    <div id="signupDiv" class="col-5">
+    <div class="col-1"></div>
+    <div id="signupDiv" class="col-4">
       <p>Sign up</p>
       <div class="initButton" @click="signup">Sign up</div>
     </div>
     <div class="col-2"></div>
-    <div id="loginDiv" class="col-5">
+    <div id="loginDiv" class="col-4">
       <p>Log in</p>
       <div class="initButton" @click="login">Log in</div>
     </div>
+    <div class="col-1"></div>
     </div>
   </div>
 </template>
