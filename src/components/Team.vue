@@ -8,21 +8,15 @@
     <table>
       <td>
       <th>Name</th>
-      <tr>asd</tr>
-      <tr>asd</tr>
-      <tr>asd</tr>
+      <tr v-for="person in persons">{{ person.name }}</tr>
       </td>
       <td>
       <th>Email</th>
-      <tr>asd</tr>
-      <tr>asd</tr>
-      <tr>asd</tr>
+      <tr v-for="person in persons">{{ person.email }}</tr>
       </td>
       <td>
       <th>Access</th>
-      <tr>asd</tr>
-      <tr>asd</tr>
-      <tr>asd</tr>
+      <tr v-for="person in persons">{{ person.access }}</tr>
       </td>
     </table>
   </div>
@@ -32,7 +26,35 @@
   export default {
     name: "Team",
     data() {
-      return {};
+      return {
+        persons: [
+          {
+          name: "Emil",
+          email: "Emil@getacademy.no",
+          access: true
+        },
+          {
+          name: "Lill June",
+          email: "@getacademy.no",
+          access: false
+        },
+          {
+          name: "Sondre",
+          email: "@getacademy.no",
+          access: false
+        },
+          {
+          name: "Kvamme",
+          email: "@getacademy.no",
+          access: false
+        },
+          {
+          name: "Hellenes",
+          email: "@getacademy.no",
+          access: false
+        }
+        ]
+      };
     },
     methods: {
       home() {
@@ -47,13 +69,12 @@
 
 <style scoped>
 table, td, tr {
-  padding: 0;
   margin-top: 1%;
-  border: 1px solid black;
+  padding: 0;
+  border: 1px solid #ff8500;
 }
 th {
   padding: 1vh 6vw;
-  border-bottom: 1px solid black;
   background-color: gray;
 }
 </style>
