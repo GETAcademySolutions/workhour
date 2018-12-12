@@ -11,7 +11,13 @@
       <button class="col-1 containerPart initButtonBlue day" id="stopTimer" @click="stopLog" style="display: none;">Stop</button>
       <table class="col-12" v-for="day in days" style="margin-top: 20px">
         <tr style="background-color: #016872; color: white">
-          <td colspan="4"><span style="float: left;"> {{ day.dayName }}, {{ day.date }}</span><span style="float: right;">Total: {{day.total}}</span></td>
+          <td colspan="4"><span style="float: left;"> {{ day.dayName }}, {{ day.date }}</span>
+          <span style="float: right; margin-right: 5px;">Total: {{ day.total }}</span></td>
+          <!-- <span v-model="total" style="float: right;">Total: 
+            {{ day.tasks[0].endTime + day.tasks[1].endTime + 
+            day.tasks[2].endTime + day.tasks[3].endTime - 
+            day.tasks[0].startTime - day.tasks[1].startTime - 
+            day.tasks[2].startTime - day.tasks[3].startTime }}</span></td> -->
         </tr>
         <tr v-for="task in day.tasks">
           <td>{{ task.description }}</td>
@@ -34,11 +40,11 @@
         days: [{
             date: "03.01.2019",
             dayName: "Thursday",
-            total: 1.5,
+            total: null,
             tasks: [{
                 description: "Task1",
-                startTime: 10,
-                endTime: 12,
+                startTime: 8.5,
+                endTime: 10,
                 project: "Proj 1"
               },
               {
@@ -49,14 +55,14 @@
               },
               {
                 description: "Task3",
-                startTime: 10,
-                endTime: 12,
+                startTime: 12,
+                endTime: 15,
                 project: "Proj 1"
               },
               {
                 description: "Task4",
-                startTime: 10,
-                endTime: 12,
+                startTime: 15,
+                endTime: 17.5,
                 project: "Proj 1"
               }
             ]
@@ -64,29 +70,29 @@
           {
             date: "02.01.2019",
             dayName: "Wednesday",
-            total: 1.5,
+            total: null,
             tasks: [{
                 description: "Task1",
+                startTime: 8.5,
+                endTime: 10,
+                project: "Proj 1"
+              },
+              {
+                description: "Task2",
                 startTime: 10,
                 endTime: 12,
                 project: "Proj 1"
               },
               {
-                description: "Task1",
-                startTime: 10,
-                endTime: 12,
+                description: "Task3",
+                startTime: 12,
+                endTime: 15,
                 project: "Proj 1"
               },
               {
-                description: "Task1",
-                startTime: 10,
-                endTime: 12,
-                project: "Proj 1"
-              },
-              {
-                description: "Task1",
-                startTime: 10,
-                endTime: 12,
+                description: "Task4",
+                startTime: 15,
+                endTime: 18.5,
                 project: "Proj 1"
               }
             ]
@@ -94,29 +100,29 @@
           {
             date: "01.01.2019",
             dayName: "Tuesday",
-            total: 1.5,
+            total: null,
             tasks: [{
                 description: "Task1",
+                startTime: 8.5,
+                endTime: 10,
+                project: "Proj 1"
+              },
+              {
+                description: "Task2",
                 startTime: 10,
                 endTime: 12,
                 project: "Proj 1"
               },
               {
-                description: "Task1",
-                startTime: 10,
-                endTime: 12,
+                description: "Task3",
+                startTime: 12,
+                endTime: 15,
                 project: "Proj 1"
               },
               {
-                description: "Task1",
-                startTime: 10,
-                endTime: 12,
-                project: "Proj 1"
-              },
-              {
-                description: "Task1",
-                startTime: 10,
-                endTime: 12,
+                description: "Task4",
+                startTime: 15,
+                endTime: 16.5,
                 project: "Proj 1"
               }
             ]
@@ -154,7 +160,22 @@
         //reset
         count = 0;
         timer.innerHTML = "0:00:00";
-      }
+      }      
+    },
+    mounted() {
+      console.log("hello")
+      this.days.forEach(element => {
+        element.tasks.forEach(task => {
+          element.total += (task.endTime - task.startTime)
+        console.log(element.total)
+        });
+      });
+      // for (e = 0; e < this.days.count; e++) {
+      //   for (t = 0; t < this.days[e].tasks.count; t++) {
+      //     this.days[e].total += (this.days[e].tasks[t].endTime - this.days[e].tasks[t].startTime)
+      //   }
+      //   console.log(this.days[e].total)
+      // }
     }
   };
 
