@@ -6,7 +6,7 @@
       <div class="col-1 containerPart centeredText timerNumber" id="timer">0:00:00</div>
       <button class="col-2 containerPart initButtonBlue day" id="startTimer" @click="createLog">START</button>
       <button class="col-2 containerPart initButtonBlue day" id="stopTimer" @click="stopLog" style="display: none;">STOP</button>
-      <table class="col-12" v-for="day in days" style="margin-top: 20px;">
+      <table class="col-12" v-for="day in days">
         <tr style="background-color: #016872; color: white">
           <td colspan="4"><span style="float: left;"> {{ day.dayName }}, {{ day.date }}</span>
           <span style="float: right; margin-right: 5px;">Total: {{ day.total }}</span></td>

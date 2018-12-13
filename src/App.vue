@@ -100,6 +100,9 @@ export default {
 .centeredText {
   padding: 1%;
 }
+table {
+  margin-top: 20px;
+}
   table,
   tr,
   td {

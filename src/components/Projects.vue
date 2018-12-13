@@ -73,7 +73,7 @@
 
 
     </div>
-        <table class="col-12" style="margin-top: 20px;">
+        <table class="col-12">
           <th>Project</th>
           <th>Client</th>
           <th>Status</th>
