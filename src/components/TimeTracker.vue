@@ -1,15 +1,12 @@
 <template>
   <div class="timeTracker">
     <div class="containerDiv row">
-
-    </div>
-    <div id="app" class="row">
-      <input class="col-8 containerPart text-left" v-on:keydown.enter="stopLog" placeholder="What do you think you are doing?" /> 
-      <div class="col-1 containerPart">+Project</div>
-      <div class="col-2 containerPart" id="timer">0:00:00</div>
-      <button class="col-1 containerPart initButtonBlue day" id="startTimer" @click="createLog">Start</button>
-      <button class="col-1 containerPart initButtonBlue day" id="stopTimer" @click="stopLog" style="display: none;">Stop</button>
-      <table class="col-12" v-for="day in days" style="margin-top: 20px">
+      <input class="col-7 containerPart text-left" v-on:keydown.enter="createLog" placeholder="What do you think you are doing?" /> 
+      <div class="col-2 containerPart centeredText">+Project</div>
+      <div class="col-1 containerPart centeredText timerNumber" id="timer">0:00:00</div>
+      <button class="col-2 containerPart initButtonBlue day" id="startTimer" @click="createLog">START</button>
+      <button class="col-2 containerPart initButtonBlue day" id="stopTimer" @click="stopLog" style="display: none;">STOP</button>
+      <table class="col-12" v-for="day in days" style="margin-top: 20px;">
         <tr style="background-color: #016872; color: white">
           <td colspan="4"><span style="float: left;"> {{ day.dayName }}, {{ day.date }}</span>
           <span style="float: right; margin-right: 5px;">Total: {{ day.total }}</span></td>
@@ -21,8 +18,8 @@
         </tr>
         <tr v-for="task in day.tasks">
           <td>{{ task.description }}</td>
-          <td>{{ task.startTime }}</td>
-          <td>{{ task.endTime }}</td>
+          <td class="timerNumber">{{ task.startTime }} - {{ task.endTime }}</td>
+          <td>{{ task.endTime - task.startTime }}</td>
           <td>{{ task.project }}</td>
         </tr>
       </table>
@@ -181,40 +178,20 @@
 
 </script>
 <style scoped>
+.timerNumber {
+  color: #999999;
+}
   .containerPart {
     border: 1.5px solid #ff8500;
   }
 
   .containerDiv {
-    margin-top: 3.5%;
-    font-size: 100%;
     border: none;
-  }
-
-  .noBorder {
-    border: none;
-  }
-
-  .noBorderLeft {
-    border: 1.5px solid #ff8500;
-    border-left: none;
-  }
-
-  .noBorderRight {
-    border: 1.5px solid #ff8500;
-    border-right: none;
   }
 
   .day {
     background-color: #016872;
     color: rgba(255, 255, 255, 0.7);
-  }
-
-  table,
-  tr,
-  td {
-    border-collapse: collapse;
-    border: 2px solid #ff8500;
   }
 
 </style>

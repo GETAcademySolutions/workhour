@@ -55,6 +55,8 @@ export default {
 
 .initButtonBlue {
   background-color: #016872;
+  padding: 1%;
+  font-weight: BOLD;
 }
 
 .containerDiv {
@@ -95,4 +97,16 @@ export default {
 .filterDiv {
   margin-right: 1%;
 }
+.centeredText {
+  padding: 1%;
+}
+  table,
+  tr,
+  td {
+    border-collapse: collapse;
+    border: 2px solid #ff8500;
+  }
+  th {
+    background-color: #dddddd;
+  }
 </style>

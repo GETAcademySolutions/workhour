@@ -70,7 +70,21 @@
 
         <div class="searchDiv"><input class="searchBar" type="text" placeholder="Search by description..."></div>
         <div class="filterDiv"><button class="initButton3">Filter</button></div>
+
+
     </div>
+        <table class="col-12" style="margin-top: 20px;">
+          <th>Project</th>
+          <th>Client</th>
+          <th>Status</th>
+          <th>Team</th>
+          <tr v-for="object in objects">
+            <td>{{ object.project }}</td>
+            <td>{{ object.client }}</td>
+            <td>{{ object.status }}</td>
+            <td>{{ object.team }}</td>
+          </tr>
+        </table>
   </div>
 </template>
 
@@ -78,7 +92,26 @@
   export default {
     name: "Projects",
     data() {
-      return {};
+      return {
+        objects: [{
+          project: "Project1",
+          client: "Client1",
+          status: false,
+          team: "GetStarted"
+        },
+        {
+          project: "Project2",
+          client: "Client2",
+          status: false,
+          team: "GetAcademy"
+        },
+        {
+          project: "Project3",
+          client: "Client3",
+          status: true,
+          team: "GetSolutions"
+        }]
+      };
     },
     methods: {
       home() {
