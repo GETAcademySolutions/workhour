@@ -1,23 +1,19 @@
 <template>
   <div class="team">
-    <div class="pageHeader">Team</div>
-    <div class="row">
-      <div class="col-4"><input class="searchBar" type="text" placeholder="Search by description..."></div>
-      <div><button class="initButton3">Filter</button></div>
+    <div class="pageHeader" style="margin-bottom: 1.25%;">Team</div>
+    <div class="containerDiv row">
+        <div class="searchDiv"><input class="searchBar" type="text" style="text-align: left;" placeholder="Search by description..."></div>
+        <div class="filterDiv"><button class="initButton3">Filter</button></div>
     </div>
-    <table>
-      <td>
+    <table class="col-12">
       <th>Name</th>
-      <tr v-for="person in persons">{{ person.name }}</tr>
-      </td>
-      <td>
       <th>Email</th>
-      <tr v-for="person in persons">{{ person.email }}</tr>
-      </td>
-      <td>
       <th>Access</th>
-      <tr v-for="person in persons">{{ person.access }}</tr>
-      </td>
+      <tr v-for="person in persons">
+        <td>{{ person.name }}</td>
+        <td>{{ person.email }}</td>
+        <td>{{ person.access }}</td>
+      </tr>
     </table>
   </div>
 </template>
@@ -27,32 +23,31 @@
     name: "Team",
     data() {
       return {
-        persons: [
+        persons: [{
+            name: "Emil",
+            email: "Emil@getacademy.no",
+            access: true
+          },
           {
-          name: "Emil",
-          email: "Emil@getacademy.no",
-          access: true
-        },
+            name: "Lill June",
+            email: "@getacademy.no",
+            access: false
+          },
           {
-          name: "Lill June",
-          email: "@getacademy.no",
-          access: false
-        },
+            name: "Sondre",
+            email: "@getacademy.no",
+            access: false
+          },
           {
-          name: "Sondre",
-          email: "@getacademy.no",
-          access: false
-        },
+            name: "Kvamme",
+            email: "@getacademy.no",
+            access: false
+          },
           {
-          name: "Kvamme",
-          email: "@getacademy.no",
-          access: false
-        },
-          {
-          name: "Hellenes",
-          email: "@getacademy.no",
-          access: false
-        }
+            name: "Hellenes",
+            email: "@getacademy.no",
+            access: false
+          }
         ]
       };
     },
@@ -68,13 +63,11 @@
 </script>
 
 <style scoped>
-table, td, tr {
-  margin-top: 1%;
-  padding: 0;
-  border: 1px solid #ff8500;
-}
-th {
-  padding: 1vh 6vw;
-  background-color: gray;
-}
+  table,
+  th,
+  td,
+  tr {
+    border: 1px solid #ff8500;
+  }
+
 </style>

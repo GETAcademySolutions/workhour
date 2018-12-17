@@ -7,8 +7,8 @@
       <button class="col-2 containerPart initButtonBlue day" id="startTimer" @click="createLog">START</button>
       <button class="col-2 containerPart initButtonBlue day" id="stopTimer" @click="stopLog" style="display: none;">STOP</button>
       <table class="col-12" v-for="day in days">
-        <tr style="background-color: #016872; color: white">
-          <td colspan="4"><span style="float: left;"> {{ day.dayName }}, {{ day.date }}</span>
+        <tr class="initButtonBlue day">
+          <td colspan="4"><span style="float: left; padding-left: 20px;"> {{ day.dayName }}, {{ day.date }}</span>
           <span style="float: right; margin-right: 5px;">Total: {{ day.total }}</span></td>
           <!-- <span v-model="total" style="float: right;">Total: 
             {{ day.tasks[0].endTime + day.tasks[1].endTime + 
@@ -187,11 +187,6 @@
 
   .containerDiv {
     border: none;
-  }
-
-  .day {
-    background-color: #016872;
-    color: rgba(255, 255, 255, 0.7);
   }
 
 </style>

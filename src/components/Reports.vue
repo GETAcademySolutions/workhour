@@ -96,7 +96,7 @@
       </b-dropdown>
 
 
-      <div class="searchDiv"><input class="searchBar" type="text" placeholder="Search by description..."></div>
+      <div class="searchDiv"><input class="searchBar" type="text" style="text-align: left;" placeholder="Search by description..."></div>
       <div class="filterDiv"><button class="initButton3">Filter</button></div>
     </div>
 

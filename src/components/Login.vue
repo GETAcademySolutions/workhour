@@ -7,6 +7,7 @@
       </div>
       <div class="containerPart col-3"></div>
     </div>
+    <p>Need an account: <a href="#/Signup">Create an account</a></p>
     <div class="containerDiv row"> 
       <div class="containerPart col-3"></div>
       <div class="containerPart col-6 visiblePart">

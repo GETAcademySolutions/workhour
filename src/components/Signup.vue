@@ -3,10 +3,11 @@
     <div class="containerDiv row">
       <div class="containerPart col-3"></div>
       <div class="containerPart col-6 visiblePart">
-      <h1 style="font-size: 375%;">Sign up</h1>
+      <h1>Sign up</h1>
       </div>
       <div class="containerPart col-3"></div>
     </div>
+    <p>Already have an account: <a href="#/Login">Log in</a></p>
     <div class="containerDiv row"> 
       <div class="containerPart col-3"></div>
       <div class="containerPart col-6 visiblePart">

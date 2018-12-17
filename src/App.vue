@@ -31,6 +31,10 @@ export default {
   color: #2c3e50;
   margin-top: 20px;
 }
+/*Unnecessary?*/
+body {
+  background-color: rgb(235, 235, 235);
+}
 .pageHeader {
   text-align: left; 
   font-size: 30px; 
@@ -38,7 +42,6 @@ export default {
 }
 .initButton {
   padding: 25px;
-  border: 1px solid black;
   background-color: #016872;
   color: rgb(255, 255, 255);
 }
@@ -110,6 +113,12 @@ table {
     border: 2px solid #ff8500;
   }
   th {
-    background-color: #dddddd;
+    background-color: #016872;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .day {
+    background-color: #016872;
+    color: rgba(255, 255, 255, 0.7);
   }
 </style>

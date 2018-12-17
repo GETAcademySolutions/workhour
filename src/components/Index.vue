@@ -4,12 +4,12 @@
     <div id="signupLoginDiv" class="row">
     <div class="col-1"></div>
     <div id="signupDiv" class="col-4">
-      <p>Sign up</p>
+      <p>This is where you sign up</p>
       <div class="initButton" @click="signup">Sign up</div>
     </div>
     <div class="col-2"></div>
     <div id="loginDiv" class="col-4">
-      <p>Log in</p>
+      <p>This is where you log in</p>
       <div class="initButton" @click="login">Log in</div>
     </div>
     <div class="col-1"></div>
@@ -39,8 +39,7 @@ export default {
 #signupDiv,
 #loginDiv {
   margin-top: 15%;
-  padding: 2%;
-  border: 1px solid black;
+  padding: 1%;
   background-color: #FF8500;
   color: rgb(0, 0, 0);
 }

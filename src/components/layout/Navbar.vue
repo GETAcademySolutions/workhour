@@ -26,8 +26,10 @@
           <template slot="button-content">
             <em>Username</em>
           </template>
-          <b-dropdown-item href="#" style="font-weight: bold;">Work space:</b-dropdown-item>
+          <b-dropdown-item href="#" style="font-weight: bold;" @click="workspaces">Workspace:</b-dropdown-item>
           <b-dropdown-item href="#">- Hjemme</b-dropdown-item>
+          <b-dropdown-item href="#">- Colab</b-dropdown-item>
+          <b-dropdown-item href="#">- GetAcademy</b-dropdown-item>
           <b-dropdown-divider style="border-color: #FF8500;"></b-dropdown-divider>
           <b-dropdown-item href="#" @click="settings">Settings</b-dropdown-item>
           <b-dropdown-item href="#" @click="index">Log out</b-dropdown-item>
@@ -63,6 +65,9 @@ export default {
     },
     team() {
       this.$router.push({ name: "Team" });
+    },
+    workspaces() {
+      this.$router.push({ name: "Workspaces" });
     }
   }
 };
